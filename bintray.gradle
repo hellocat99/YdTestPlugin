@@ -3,7 +3,7 @@ apply plugin: 'maven-publish'
 
 def projectName = "testplugin"
 def mavenDesc = 'yangdan desc'
-def baseUrl = 'https://github.com/yourBaseUrl'
+def baseUrl = 'https://github.com/hellocat99'
 def siteUrl = baseUrl
 def gitUrl = "${baseUrl}/yourGitUrl"
 def issueUrl = "${baseUrl}/yourGitIssueUrl"
@@ -25,9 +25,9 @@ install {
                 url siteUrl
 
                 // Archive
-                groupId project.group
-                artifactId archivesBaseName
-                version project.version
+                groupId 'cn.test.gradle'
+                artifactId 'plugintest'
+                version '3.0.0'
 
                 // License
                 inceptionYear inception

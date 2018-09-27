@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="cn.test.gradle" module="plugintest" revision="1.0.0" status="integration" publication="20180921140314"/>
+  <info organisation="cn.test.gradle" module="plugintest" revision="4.0.0" status="integration" publication="20180925164731"/>
   <configurations>
     <conf name="apiElements" visibility="private" extends="runtime"/>
     <conf name="archives" visibility="public"/>
@@ -23,5 +23,7 @@
   </configurations>
   <publications>
     <artifact name="plugintest" type="jar" ext="jar" conf="apiElements,archives,runtime,runtimeElements"/>
+    <artifact name="plugintest" type="jar" ext="jar" conf="archives" m:classifier="javadoc"/>
+    <artifact name="plugintest" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
   </publications>
 </ivy-module>
